@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <header>
+        <div class="top">
+            <div class="phone">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="text">
+                    <a href="">
+                        <span>034 893 9306</span>
+                    </a>
+                    <p>Gọi điện ngay - Ship liền tay (24/7)</p>
+                </div>
+            </div>
+            <div class="nav-mb-bt">
+                <i onclick=" menu_on()" class="fas fa-bars"></i>
+            </div>
+            <div class="nav-mb">
+                <div class="logo-bt">
+                    <img src="img/logo.png" alt="">
+                    <i onclick=" menu_off()" class="fas fa-times"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="">TRANG CHỦ</a></li>
+                        <li><a href="">THỰC ĐƠN</a></li>
+                        <li><a href="">KHUYẾN MÃI</a></li>
+                        <li><a href="">CHÍNH SÁCH</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div onclick=" overlay_off()" class="overlay">
+
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="cart">
+                <div class="money-item">
+                    <h3>0 đ</h3>
+                    <span>0 sản phẩm - Xem giỏ hàng</span>
+                </div>
+                <a href="">
+                    <p>0</p>
+                    <i class="fas fa-shopping-basket"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bot">
+            <nav>
+                <ul>
+                    <li><a id="home" href="">TRANG CHỦ</a></li>
+                    <li><a href="">THỰC ĐƠN</a></li>
+                    <li><a href="">KHUYẾN MÃI</a></li>
+                    <li><a href="">CHÍNH SÁCH</a></li>
+                    <li><a href="">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <h2 data-aos="fade-right" data-aos-offset="50" data-aos-duration="950">QUALITY <span>FOODS</span></h2>
+            <h5 data-aos="fade-left" data-aos-offset="50" data-aos-duration="950">Healthy Food for healthy body</h5>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <img id="top" src="img/paint-or-top.png" alt="">
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="all-col ">
+                <div class="col">
+                    <i class="fas fa-cookie-bite"></i> <br>
+                    <h5>CHẤT LƯỢNG DẪN ĐẦU</h5>
+                    <span>The Pizza House chúng tôi cam kết <br>
+                        đảm bảo an toàn vệ sinh thực phẩm , <br>
+                        luôn chọn vật liệu ở những nơi uy tín, <br>
+                        đảm bảo sản phẩm đến tay quý khách <br>
+                        luôn là tốt nhất</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-dolly"></i> <br>
+                    <h5>GIAO HÀNG ĐÚNG GIỜ</h5>
+                    <span>Để tăng cường sự tin tưởng và yên <br>
+                        tâm với khách hàng, The Pizza House <br>
+                        chúng tôi luôn đảm bảo khâu vận chuyển <br>
+                        luôn đúng giờ với chi phí giao hàng rẻ nhất </span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-concierge-bell"></i> <br>
+                    <h5>DỊCH VỤ CHUYÊN NGHIỆP</h5>
+                    <span>The Pizza House cùng với đội ngũ <br>
+                        nhân viên mang đầy sức trẻ và nhiệt <br>
+                        huyết, chúng tôi luôn mong muốn <br>
+                        đem lại cho khách hàng của mình <br>
+                        chất lượng dịch vụ tốt nhất</span>
+                </div>
+            </div>
+            <img id="bot" src="img/paint-or-bot.png" alt="">
+        </div>
+        <div class="product">
+            <div class="title">
+                <h3>PIZZA <i class="fas fa-pizza-slice"></i></h3>
+            </div>
+            <div class="all-row">
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="850" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-1.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Hải Sản </h3>
+                            <span>Tôm, cua, mực và bông cải xanh tươi ngon trên <br>
+                                nền sốt Pesto Xanh</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>169.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-2.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Thịt Thập Cẩm</h3>
+                            <span>Sự kết hợp hài hòa của ba loại thịt và rau củ</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>119.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-3.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Cocktail</h3>
+                            <span>Tôm, cua, giăm bông, phô mai... với sốt Thousand Island</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>129.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-4.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Phô Mai</h3>
+                            <span>Bánh Pizza với vô vàn phô mai để bạn tha hồ tận hưởng</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>99.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-5.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Thịt Nguội 
+                            </h3>
+                            <span>Sự kết hợp của thịt viên, cà chua và hành khô tạo lên hương vị độc đáo</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>119.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-6.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Aloha</h3>
+                            <span>Thịt nguội, nấm và dứa hòa quyện với sốt Thousand Island</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>119.000đ
+                                    </h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-7.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-7.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Gà Nướng Dứa</h3>
+                            <span>Thịt gà mang vị ngọt của dứa kết hợp với vị cay nóng của ớt</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>169.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img id="inside" src="img/pizza-8.png" class="rounded-circle" alt="">
+                        <img id="bg" src="img/bg-pizza-8.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pizza Hawaiian</h3>
+                            <span>Giăm bông, tôm, thịt muối và dứa hòa quện tạo lên hương vị tuyệt hảo</span>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>169.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <button>Xem thêm +</button>
+            </div>
+        </div>
+        <div class="drink">
+            <div class="title">
+                <h3>ĐỒ UỐNG <i class="fas fa-cocktail"></i></h3>
+            </div>
+            <div class="all-row">
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/drink-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pepsi Black Lime Lon</h3>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>19.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/drink-2.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pepsi Black Lon</h3>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>19.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/drink-3.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Pepsi Lon</h3>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>19.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/drink-4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h3>Mirinda Soda Kem Lon</h3>
+                        </div>
+                        <div class="price-bt">
+                            <div class="price">
+                                <span>Giá chỉ từ:<br>
+                                    <h3>19.000đ</h3>
+                                </span>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <button>Xem thêm +</button>
+            </div>
+        </div>
+        <div class="combo">
+            <div class="title">
+                <h3> Combo siêu hấp dấn <i class="fas fa-utensils"></i></h3>
+            </div>
+            <div class="all-row">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/combo-4-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name-bt">
+                            <div class="name">
+                                <h3>Combo 04</h3>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bot">
+                            <p>Cho 6 người chỉ: <span> 429.000đ</span></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/combo-3-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name-bt">
+                            <div class="name">
+                                <h3>Combo 03</h3>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bot">
+                            <p>Cho 4 người chỉ: <span> 269.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/combo-2-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name-bt">
+                            <div class="name">
+                                <h3>Combo 02</h3>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bot">
+                            <p>Cho 3 người chỉ: <span> 179.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="950" class="item">
+                    <div class="img">
+                        <img src="img/combo-1-1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name-bt">
+                            <div class="name">
+                                <h3>Combo 01</h3>
+                            </div>
+                            <div class="bt">
+                                <button>
+                                    Mua ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bot">
+                            <p>Cho 2 người chỉ: <span> 139.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="talk">
+            <div class="img">
+                <img data-aos="fade-right" data-aos-offset="50" data-aos-duration="1100" src="img/talk-human.png"
+                    alt="">
+            </div>
+            <div class="text">
+                <h3 data-aos="fade-in" data-aos-offset="50" data-aos-duration="850">PHẢN HỒI TỪ KHÁCH HÀNG</h3>
+                <div class="slide-text">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="1000" class="carousel-inner">
+                            <div  class="carousel-item active">
+
+                                <div class="text">
+                                    <span>"Nhà mình ngay Cầu Giấy nên cũng rất ưa đặt pizza ở The Pizza House
+                                        gần nhà. Và quan trọng là chất lượng pizza ở đây mình thấy ngon lắm nhé. Giá
+                                        tính ra cũng rẻ. Mình hay gọi size 24cm tính tiền cho dễ."</span>
+                                    <p>- Lê Phương -</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text">
+                                    <span>"Vỏ bánh giòn rụm, k cứng, lớp phô mai béo ngậy, thơm thơm. Tối k ăn hết mình
+                                        cho vào tủ lạnh mai lôi ra ăn sáng vẫn đc, mặc dù cho vào lò vi sóng mà bánh gần
+                                        như vẫn giữ đc hương vị lúc đầu"</span>
+                                    <p>- Nhật Nam -</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div  class="text">
+                                    <span>"Có mặt sau 40p, nóng hổi. Pizza khá giống pepperonis nhưng pepp mà để mua 1
+                                        tặng 1 thì nhân chán lắm, lèo tèo. Chẳng bù cho bạn này nhân vẫn đầy đặn, phô
+                                        mai vừa vặn thơm ngon. Rất là ok! 3 đứa ăn 2 cái M mà lặc lè. Sẽ còn order dài
+                                        "</span>
+                                    <p>- Văn Quân -</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="text">
+                <h2>New</h2>
+                <h3 data-aos="fade-right" data-aos-offset="50" data-aos-duration="850">PIZZA RAU CỦ THẬP CẨM</h3>
+                <span data-aos="fade-in" data-aos-offset="50" data-aos-duration="1100">- Bạn đã quá chán các loại pizza
+                    thông thường?
+                </span> <br>
+                <span data-aos="fade-in" data-aos-offset="50"> - chúng chứa quá nhiều calo </span><br>
+                <span data-aos="fade-in" data-aos-offset="50"> - bạn đang giảm cân, cần có chế độ ăn healthy</span>
+                <p data-aos="fade-in" data-aos-offset="50"> Thì đây chính là thứ mà bạn đang tìm kiếm</p>
+                </span>
+                <span data-aos="fade-in" data-aos-offset="50">Khi đặt hàng bạn còn có cơ hội nhận
+                    voucher giảm tới 40%</span> <br>
+                <button data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000">TRẢI NGHIỆM NGAY <i
+                        class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="img">
+                <img src="img/40off-post.png" alt="">
+            </div>
+        </div>
+        <div class="ship">
+            <div class="img">
+                <img data-aos="fade-right" data-aos-offset="150" data-aos-duration="1000" id="smoke"
+                    src="img/ship-smoke.png" alt="">
+                <img data-aos="fade-right" data-aos-offset="200" data-aos-duration="900" id="human"
+                    src="img/ship-human.png" alt="">
+            </div>
+            <div class="text">
+                <h3 data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000" style="font-family: sans-serif; font-weight: bold;">GIAO HÀNG SIÊU TỐC</h3>
+                <span data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000">Hàng sẽ tới tay quý khách trong vòng 15 phút <br>
+                    trong phạm vi nội thành và 30 phút khi ở ngoại thành</span>
+                <button data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000"><i class="fas fa-phone-alt"></i>GỌI NGAY: 034 893 9306</button>
+            </div>
+        </div>
+        <div class="bg-bot-main">
+
+        </div>
+    </main>
+    <footer>
+        <div class="all-col">
+            <div class="col-1">
+                <div class="name">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                <div class="icon">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i><a href="">Giới thiệu</a></li>
+                    <li><i class="fas fa-caret-right"></i><a href="">Tầm nhìn của chúng tôi</a></li>
+                    <li> <i class="fas fa-caret-right"></i><a href="">Giá trị cốt lõi</a></li>
+                    <li> <i class="fas fa-caret-right"></i><a href="">Vệ sinh an toàn thực phẩm</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>THÔNG TIN TUYỂN DỤNG</h4>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i><a href="">Việc tại The Pizza House</a></li>
+                    <li><i class="fas fa-caret-right"></i><a href="">Môi trường làm việc</a></li>
+                    <li><i class="fas fa-caret-right"></i><a href="">Cơ hội nghề nghiệp</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <div class="fb-page" data-href="https://www.facebook.com/The-Pizza-House-100990415587834"
+                    data-tabs="timeline" data-width="320" data-height="270" data-small-header="true"
+                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/The-Pizza-House-100990415587834"
+                        class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/The-Pizza-House-100990415587834">The Pizza House</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+  nonce="prrcmrbL"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  });
+</script>
+
+<script>
+  function menu_off(){
+      document.getElementsByClassName("nav-mb")[0].style.transform="translate(-100%)";
+      document.getElementsByClassName('overlay')[0].style.display='none'
+  }
+  function menu_on(){
+      document.getElementsByClassName("nav-mb")[0].style.transform="translate(0%)";
+      document.getElementsByClassName('overlay')[0].style.display='block'
+  }
+  function overlay_off(){
+      document.getElementsByClassName('overlay')[0].style.display='none';
+      document.getElementsByClassName("nav-mb")[0].style.transform="translate(-100%)";
+  }
+
+
+</script>
+  </body>
+</html>
